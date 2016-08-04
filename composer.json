@@ -26,7 +26,8 @@
         "sonata-project/easy-extends-bundle": "^2.1",
         "sonata-project/user-bundle": "^3.0",
         "mopa/bootstrap-bundle": "^3.0",
-        "twbs/bootstrap-sass": "^3.3.0"
+        "twbs/bootstrap-sass": "^3.3.0",
+        "symfony/assetic-bundle": "^2.8"
     },
     "require-dev": {
         "sensio/generator-bundle": "~3.0",

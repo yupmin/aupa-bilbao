@@ -26,6 +26,7 @@ class AppKernel extends Kernel
             new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
             new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
             new Mopa\Bundle\BootstrapBundle\MopaBootstrapBundle(),
+            new Symfony\Bundle\AsseticBundle\AsseticBundle(),
 
             new AppBundle\AppBundle(),
         );

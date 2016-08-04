@@ -27,3 +27,15 @@
     <link href="{{ asset('css/app.min.css') }}" type="text/css" rel="stylesheet" />
     {% endif %}
 {% endblock head_style %}
+
+{% block foot_script %}
+    {% javascripts filter='?uglifyjs2' output='js/compressed/app.min.js'
+        'js/jquery.js'
+        'bundles/mopabootstrap/js/modernizr-2.7.1-respond-1.4.2.min.js'
+        'bundles/mopabootstrap/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js'
+        'bundles/mopabootstrap/bootstrap-sass/assets/javascripts/bootstrap/popover.js'
+        'bundles/mopabootstrap/bootstrap-sass/assets/javascripts/bootstrap/*.js'
+    %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock foot_script %}

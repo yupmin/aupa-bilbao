@@ -4,6 +4,11 @@ var gulp = require('gulp'),
   rename = require('gulp-rename'),
   cssnano = require('gulp-cssnano');
 
+gulp.task('jquery-copy', function() {
+  return gulp.src('./node_modules/jquery/dist/jquery.js')
+    .pipe(gulp.dest('./web/js/'));
+});
+
 gulp.task('sass', function () {
   return gulp.src('./app/Resources/assets/scss/app.scss')
     .pipe(sass({sourceComments: 'map'}))
