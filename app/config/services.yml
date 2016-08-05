@@ -9,3 +9,13 @@ services:
         tags:
             - { name: sonata.admin, manager_type: orm, group: "Content", label: "Product" }
         arguments: [~, AppBundle\Entity\Product, ~]
+
+    sonata.admin.featured_image:
+        class: AppBundle\Admin\FeaturedImageAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Content", label: "Featured Image" }
+        arguments: [~, AppBundle\Entity\FeaturedImage, ~]
+
+    appmailer:
+        class: AppBundle\Service\AppMailer
+        arguments: ["@mailer"]

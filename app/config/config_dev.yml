@@ -30,5 +30,7 @@ monolog:
         #    type:   chromephp
         #    level:  info
 
-#swiftmailer:
+swiftmailer:
+    port:
+        1025 # to mailcacher https://mailcatcher.me
 #    delivery_address: me@example.com

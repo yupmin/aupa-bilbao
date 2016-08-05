@@ -32,3 +32,18 @@ sonata_user_change_password:
 sonata_user:
     resource: '@SonataUserBundle/Resources/config/routing/admin_security.xml'
     prefix: /admin
+
+privacy_policy:
+    path: /privacy
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: static/privacy.html.twig
+        maxAge: 86400
+        sharedAge: 86400
+
+wpadmin:
+    path: /wp-admin
+    defaults:
+        _controller: FrameworkBundle:Redirect:redirect
+        route: sonata_admin_dashboard
+        permanent: true

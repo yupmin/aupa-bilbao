@@ -7286,3 +7286,17 @@ button.close {
   /* line 12, /Users/yupmin/Sites/homestead/aupa-bilbao/web/bundles/mopabootstrap/sass/form_flow.scss */
   .form-flow-actions::after {
     clear: both; }
+
+/* line 1, /Users/yupmin/Sites/homestead/aupa-bilbao/app/Resources/assets/scss/base/_common.scss */
+body {
+  padding-top: 55px; }
+
+/* line 1, /Users/yupmin/Sites/homestead/aupa-bilbao/app/Resources/assets/scss/component/_claim.scss */
+.claim {
+  margin: 10px 0; }
+  /* line 4, /Users/yupmin/Sites/homestead/aupa-bilbao/app/Resources/assets/scss/component/_claim.scss */
+  .claim__title {
+    color: #f22; }
+  /* line 8, /Users/yupmin/Sites/homestead/aupa-bilbao/app/Resources/assets/scss/component/_claim.scss */
+  .claim__text {
+    font-style: italic; }

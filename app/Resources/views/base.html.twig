@@ -5,7 +5,7 @@
 {% block headline %}Aupa Bilbao!{% endblock headline %}
 
 {% block footer %}
-<p>Sexy footer 2016</p>
+    <p>Footer sexy 2015 - <a href="javascript:void(0)" data-toggle="modal" data-target="#contactModal">Contact</a></p>
 {% endblock footer %}
 
 {% block navbar %}
@@ -39,3 +39,7 @@
     <script type="text/javascript" src="{{ asset_url }}"></script>
     {% endjavascripts %}
 {% endblock foot_script %}
+
+{% block body_end %}
+    {{ render(controller('AppBundle:Contact:contact')) }}
+{% endblock body_end %}

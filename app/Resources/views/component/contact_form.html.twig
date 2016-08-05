@@ -1,0 +1,8 @@
+{{ form_start(contactform, { 'attr': { 'class': '' }}) }}
+    {{ form_row(contactform.name) }}
+    {{ form_row(contactform.email) }}
+    {{ form_row(contactform.message) }}
+    <div class="form-group">
+        <button type="submit" class="btn btn-success">Send</button>
+    </div>
+{{ form_end(contactform) }}
