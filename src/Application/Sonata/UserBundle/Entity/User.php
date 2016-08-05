@@ -39,4 +39,19 @@ class User extends BaseUser
     {
         return $this->id;
     }
+
+    /**
+     * Overrides default setEmail function
+     *
+     * @param string $email
+     * @return $this
+     */
+    public function setEmail($email)
+    {
+        $email = is_null($email) ? '' : $email;
+        parent::setEmail($email);
+        $this->setUsername($email);
+
+        return $this;
+    }
 }
