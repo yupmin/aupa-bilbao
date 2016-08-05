@@ -38,5 +38,14 @@
             {% include 'component/claim.html.twig' %}
         {% endfor %}
     </section>
+
+    <img src="{{ '/images/test.jpg' | imagine_filter('aupa_thumbnail') }}" alt=""/>
+
+    <picture>
+        <source media="(max-width: 640px)" srcset="{{ '/images/test.jpg' | imagine_filter('widen640') }}">
+        <source media="(max-width: 1024px)" srcset="{{ '/images/test.jpg' | imagine_filter('widen1024') }}">
+        <source media="(min-width: 1024px)" srcset="{{ '/images/test.jpg' }}">
+        <img src="{{ asset('images/test.jpg') }}" alt="">
+    </picture>
 {% endblock %}
 

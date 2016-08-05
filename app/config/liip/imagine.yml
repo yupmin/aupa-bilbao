@@ -1,0 +1,76 @@
+liip_imagine:
+    filter_sets:
+        my_thumb_in:
+            filters:
+                thumbnail: { size: [32, 32], mode: inset } # Transforms 50x40 to\ 32x26, without cutting
+        my_thumb_out:
+            filters:
+                thumbnail: { size: [32, 32], mode: outbound } # Transforms 50x40\ to 32x32, cutting the width
+
+        my_heighten:
+            filters:
+                relative_resize: { heighten: 60 } # Transforms 50x40 to 75x60
+        my_widen:
+            filters:
+                relative_resize: { widen: 32 } # Transforms 50x40 to 32x26
+        my_increase:
+            filters:
+                relative_resize: { increase: 10 } # Transforms 50x40 to 60x50
+        my_widen:
+            filters:
+                relative_resize: { scale: 2.5 } # Transforms 50x40 to 125x100
+
+        my_thumb:
+            filters:
+                upscale: { min: [800, 600] }
+
+#        my_thumb:
+#            filters:
+#                crop: { start: [10, 20], size: [120, 90] }
+#        my_thumb:
+#            filters:
+#                strip: ~
+#        my_thumb:
+#            filters:
+#                background: { color: '#00FFFF' }
+#        my_thumb:
+#            filters:
+#                background: { size: [1026, 684], color: '#00FFFF' }
+#        my_thumb:
+#            filters:
+#                auto_rotate: ~
+#        my_thumb:
+#            filters:
+#                rotate: { angle: 90 }
+#          my_thumb:
+#              filters:
+#                  interlace:
+#                      # Los modos pueden ser none, line, plane, partition
+#                      mode: line
+
+#        my_image:
+#            filters:
+#                watermark:
+#                    # Relative route to the watermark file (from "%kernel.root_dir%/")
+#                    image: Resources/data/watermark.png
+#                    # Watermark size relative to the image original size
+#                    size: 0.5
+#                    # Position: you can choose between topleft,top,topright,left,center,right,bottomleft,bottom,bottomright
+#                    position: center
+
+        carousel:
+            quality: 90
+            filters:
+                relative_resize: { widen: 1920, allow_upscale: true }
+                thumbnail: { size: [1920, 1040], mode: outbound }
+
+        aupa_thumbnail:
+            filters:
+                thumbnail: { size: [60,60], mode: outbound }
+
+        widen640:
+            filters:
+                relative_resize: { widen: 640 }
+        widen1024:
+            filters:
+                relative_resize: { widen: 1024 }

@@ -47,3 +47,6 @@ wpadmin:
         _controller: FrameworkBundle:Redirect:redirect
         route: sonata_admin_dashboard
         permanent: true
+
+_liip_imagine:
+    resource: "@LiipImagineBundle/Resources/config/routing.xml"
