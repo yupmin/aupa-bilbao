@@ -16,4 +16,5 @@
 !web/media/cache/.gitkeep
 /web/fonts/*
 !web/fonts/.gitkeep
-
+/app/sessions/*
+!app/sessions/.gitkeep
