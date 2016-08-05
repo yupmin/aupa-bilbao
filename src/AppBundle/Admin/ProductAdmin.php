@@ -44,7 +44,11 @@ class ProductAdmin extends AbstractAdmin
         $listMapper
             ->addIdentifier('id')
             ->add('name')
+            ->add('slug')
             ->add('price')
+            ->add('created')
+            ->add('updated')
+            ->add('priceChanged')
             ->add('description')
             ->add('_action', 'actions', [
                 'actions' => [

@@ -1,0 +1,13 @@
+stof_doctrine_extensions:
+    orm:
+        default:
+            sluggable: true
+            softdeleteable: true
+            timestampable: true
+
+doctrine:
+    orm:
+        filters:
+            softdeleteable:
+                class: Gedmo\SoftDeleteable\Filter\SoftDeleteableFilter
+                enabled: true
