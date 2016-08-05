@@ -14,3 +14,6 @@
 /web/js/compressed
 /web/media/cache/*
 !web/media/cache/.gitkeep
+/web/fonts/*
+!web/fonts/.gitkeep
+

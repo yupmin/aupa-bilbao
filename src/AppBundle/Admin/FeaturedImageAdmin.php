@@ -16,7 +16,8 @@ class FeaturedImageAdmin extends AbstractAdmin
     /**
      * {@inheritdoc}
      */
-    protected function configureFormFields(FormMapper $formMapper) {
+    protected function configureFormFields(FormMapper $formMapper)
+    {
         $formMapper
             ->add('url', 'url')
             ->add('active')
@@ -26,7 +27,8 @@ class FeaturedImageAdmin extends AbstractAdmin
     /**
      * {@inheritdoc}
      */
-    protected function configureDatagridFilters(DatagridMapper $datagridMapper) {
+    protected function configureDatagridFilters(DatagridMapper $datagridMapper)
+    {
         $datagridMapper
             ->add('url')
             ->add('active')
@@ -42,7 +44,7 @@ class FeaturedImageAdmin extends AbstractAdmin
             ->addIdentifier('id')
             ->add('url')
             ->add('active', null, ['editable' => true])
-            ->add('_action','actions', [
+            ->add('_action', 'actions', [
                 'actions' => [
                     'edit' => [],
                 ]

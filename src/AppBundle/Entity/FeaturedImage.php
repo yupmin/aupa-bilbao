@@ -94,4 +94,3 @@ class FeaturedImage
         return $this->active;
     }
 }
-

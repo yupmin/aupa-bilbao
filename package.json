@@ -16,9 +16,15 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
+    "gulp-copy": "0.0.2",
     "gulp-cssnano": "^2.1.2",
+    "gulp-jscs": "^4.0.0",
+    "gulp-phpcbf": "^0.1.2",
+    "gulp-phpcs": "^1.1.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
+    "gulp-scss-lint": "^0.4.0",
+    "gulp-util": "^3.0.7",
     "uglify-js": "^2.7.0"
   }
 }
